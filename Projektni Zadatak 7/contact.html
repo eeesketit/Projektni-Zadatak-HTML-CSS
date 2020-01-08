@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Contact</title>
+	</head>
+<body>
+	<header>
+		<div class="hero-image" style="height: 200px;"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="news.html">News</a></li>
+			  <li><a href="contact.html">Contact</a></li>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Contact Form</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/place/1065+Williams+St+NW,+Atlanta,+GA+30309,+Sjedinjene+Dr%C5%BEave/@33.783893,-84.3922846,17z/data=!3m1!4b1!4m5!3m4!1s0x88f5045c32fd4561:0xe22e9db82fec5fb7!8m2!3d33.783893!4d-84.3900959" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">First Name *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name" required>
+
+				<label for="lname">Last Name *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+				
+				<label for="lname">Your E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Your e-mail" required>
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+				  <option value="">Please select</option>
+				  <option value="LU">Luxembourg</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="BE">Belgium</option>
+				  <option value="RU">Russia</option>
+				</select>
+
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something to us" style="height:200px"></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2020 Leon Globlek. <a href="https://github.com/eeesketit?tab=repositories"><img src="img/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></a></p>
+	</footer>
+</body>
+</html>
